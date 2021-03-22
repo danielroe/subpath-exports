@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": true,
+    "importHelpers": true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "noErrorTruncation": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "~~/*": ["./*"]
+    },
+    "types": [
+      "node",
+      "@nuxt/types",
+      "webpack-env",
+      "jest",
+      "@nuxtjs/sanity",
+      "nuxt-logrocket"
+    ],
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "exclude": [
+    "config",
+    "node_modules",
+    "node_modules_dev",
+    "node_modules_prod",
+    "test/e2e"
+  ]
+}
