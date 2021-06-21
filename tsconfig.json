@@ -17,16 +17,14 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"],
+      "~/*": [
+        "./*"
+      ],
       "~~/*": ["./*"]
     },
     "types": [
       "node",
-      "@nuxt/types",
-      "webpack-env",
-      "jest",
-      "@nuxtjs/sanity",
-      "nuxt-logrocket"
+      "@nuxt/types"
     ],
     "resolveJsonModule": true,
     "jsx": "preserve",
@@ -34,10 +32,6 @@
     "noUnusedParameters": true
   },
   "exclude": [
-    "config",
-    "node_modules",
-    "node_modules_dev",
-    "node_modules_prod",
-    "test/e2e"
+    "node_modules"
   ]
 }
